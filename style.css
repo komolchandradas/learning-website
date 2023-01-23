@@ -1,0 +1,307 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.header {
+    height: 720px;
+    width: 100%;
+    background-image: linear-gradient(rgb(75, 6, 143), rgba(4, 9, 15, 0.7)), url(images/photo-1523050854058-8df90110c9f1.avif);
+    background-size: cover;
+}
+
+.navbar {
+    width: 90%;
+    margin: 0px auto 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-logo {
+    display: flex;
+}
+
+.name {
+    color: white;
+    margin: 12px 10px 0px;
+    font-size: 24px;
+}
+
+.nav-logo {
+    height: 60px;
+    width: 60px;
+}
+
+.nav-items {
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-item {
+    margin: 16px 0px 0px 12px;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+
+.header-text {
+    color: white;
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 60px;
+}
+
+.header-text p {
+    font-size: 18px;
+}
+
+.about-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+.about-button:hover {
+    background-color: #E67E22;
+    border: 1px solid #E67E22;
+    transition: 1s;
+}
+
+/* Courses style */
+.course-title {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.courses {
+    max-width: 90%;
+    margin: auto;
+}
+
+.all-course {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.course {
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* review style */
+.review-heading {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.review-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 60%;
+    margin: 30px auto 100px;
+}
+
+.review {
+    background: #FADBD8;
+    padding: 0px 20px 20px;
+    display: flex;
+}
+
+
+.image {
+    height: 100px;
+    width: 100px;
+    padding: 20px 20px 0px 0px;
+}
+
+
+.reviewer-name {
+    font-weight: 700;
+}
+
+.orange {
+    color: orange;
+}
+
+/* footer style */
+.footer {
+    background: rgba(149, 175, 192,1.0);
+    text-align: center;
+    margin-top: 120px;
+}
+
+.footer-heading {
+    padding-top: 60px;
+}
+
+.footer-text {
+    font-size: 17px;
+}
+
+.icons i {
+    padding: 0px 10px 40px;
+}
+
+.copyright {
+    padding-bottom: 10px;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .review-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 60%;
+        margin: 30px auto 100px;
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 560px;
+    }
+
+    .header-text {
+        top: 40%;
+    }
+
+    .navbar {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .nav-logo {
+        height: 50px;
+        width: 50px;
+    }
+
+
+    .nav-item {
+        margin: 16px 0px 0px 12px;
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .header-text h1 {
+        font-size: 32px;
+    }
+
+    .header-text {
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .about-button {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 8px 18px;
+        font-size: 16px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+
+    /* Courses style */
+    .course-title {
+        margin-top: 70px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .courses {
+        max-width: 75%;
+    }
+
+    .all-course {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    /* review style */
+    .review-heading {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+    .review-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 65%;
+        margin: 30px auto 100px;
+    }
+
+    .review {
+        padding: 2px 22px 22px;
+    }
+
+
+    /* Footer */
+    .footer-heading {
+        padding-top: 50px;
+    }
+
+    .footer-text {
+        margin: 0px 35px;
+        font-size: 15px;
+    }
+
+    .icons i {
+        padding: 15px 10px 40px;
+    }
+
+    .copyright {
+        padding-bottom: 10px;
+    }
+}
